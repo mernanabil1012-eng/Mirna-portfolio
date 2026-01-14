@@ -31,10 +31,10 @@ const AboutSection = () => {
           {/* Content */}
           <div className="space-y-6 section-fade">
             <p className="text-muted-foreground leading-relaxed">
-              A motivated Information Systems graduate from Helwan University with a strong foundation in data analysis and programming. I'm passionate about transforming raw data into meaningful insights and solving business problems using technology.
+              A motivated Data Analyst and Information Systems graduate from Helwan University with a strong foundation in data analysis and visualization. I'm passionate about transforming raw data into meaningful insights and solving business problems using analytics.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              With proficiency in SQL, Python, Power BI, and Machine Learning, I'm always eager to learn new technologies and contribute to innovative projects. I thrive in collaborative environments and bring strong problem-solving and analytical skills to every challenge.
+              With proficiency in Power BI, Tableau, SQL, Excel, Google Sheets, and Python, I'm always eager to learn new technologies and contribute to data-driven projects. I thrive in collaborative environments and bring strong problem-solving and analytical skills to every challenge.
             </p>
 
             {/* Info Items */}
