@@ -65,11 +65,12 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 pt-4">
             <a
-              href="#contact"
+              href="/Mirna_Nabil_CV.pdf"
+              download="Mirna_Nabil_CV.pdf"
               className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 flex items-center gap-2"
             >
               <Download className="w-4 h-4" />
-              Contact Me
+              Download CV
             </a>
             <a
               href="#skills"
