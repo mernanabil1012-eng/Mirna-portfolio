@@ -11,6 +11,12 @@ const education = [
 
 const courses = [
   {
+    period: "2024",
+    title: "Data Analysis Diploma",
+    institution: "Professional Training",
+    description: "Comprehensive diploma covering data analysis, visualization, Power BI, Tableau, and business analytics.",
+  },
+  {
     period: "April 2022",
     title: "C++ Course",
     institution: "180 DARAGA",

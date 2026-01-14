@@ -40,10 +40,10 @@ const HeroSection = () => {
             <span className="text-gradient glow-text">Nabil</span>
           </h1>
           <h2 className="text-2xl lg:text-3xl font-semibold text-muted-foreground">
-            And I'm an <span className="text-primary">Information Systems Graduate</span>
+            And I'm a <span className="text-primary">Data Analyst</span>
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-lg">
-            A motivated Information Systems graduate seeking an entry-level position to apply analytical and technical skills in a dynamic and growth-oriented company, eager to contribute to solving business problems using data and technology.
+            A motivated Data Analyst with expertise in Power BI, Tableau, and data visualization. Passionate about transforming raw data into meaningful insights and solving business problems using analytics and technology.
           </p>
 
           {/* Social Links */}

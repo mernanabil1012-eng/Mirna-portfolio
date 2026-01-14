@@ -1,18 +1,18 @@
 const technicalSkills = [
   {
+    name: "Power BI",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg",
+    skills: ["Data Modeling", "Dashboards", "DAX", "Visualization"],
+  },
+  {
+    name: "Tableau",
+    icon: "https://cdn.worldvectorlogo.com/logos/tableau-software.svg",
+    skills: ["Data Visualization", "Interactive Dashboards", "Analytics"],
+  },
+  {
     name: "SQL",
     icon: "https://i.ibb.co/zTKxWPR9/azure-sql-database6354.png",
     skills: ["Database Queries", "Data Manipulation", "Data Cleaning"],
-  },
-  {
-    name: "Python",
-    icon: "https://i.ibb.co/5WW93TPC/Python-svg.png",
-    skills: ["Data Analysis", "Machine Learning", "Data Visualization"],
-  },
-  {
-    name: "Power BI",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg",
-    skills: ["Data Modeling", "Dashboards", "Visualization"],
   },
   {
     name: "Microsoft Excel",
@@ -20,24 +20,24 @@ const technicalSkills = [
     skills: ["Pivot Tables", "Advanced Formulas", "Data Analysis"],
   },
   {
+    name: "Google Sheets",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg",
+    skills: ["Data Analysis", "Formulas", "Charts", "Collaboration"],
+  },
+  {
+    name: "Python",
+    icon: "https://i.ibb.co/5WW93TPC/Python-svg.png",
+    skills: ["Data Analysis", "Pandas", "Data Visualization"],
+  },
+  {
     name: "MS Office",
     icon: "https://i.ibb.co/6JrZVgf6/Microsoft-Office-2016-Logo-wine.png",
     skills: ["Word", "PowerPoint", "Outlook"],
   },
   {
-    name: "C/C++",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-    skills: ["Programming Basics", "Problem Solving", "Data Structures"],
-  },
-  {
-    name: "HTML & CSS",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-    skills: ["Web Basics", "Styling", "Responsive Design"],
-  },
-  {
-    name: "Machine Learning",
+    name: "Data Analysis",
     icon: "https://cdn-icons-png.flaticon.com/512/2103/2103633.png",
-    skills: ["Algorithms", "Model Training", "Predictions"],
+    skills: ["Data Cleaning", "Reporting", "Insights", "KPIs"],
   },
 ];
 
