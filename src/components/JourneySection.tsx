@@ -5,7 +5,7 @@ const education = [
     period: "2021 - 2025",
     title: "Bachelor's in Computers and Artificial Intelligence",
     institution: "Helwan University",
-    description: "Graduated with Distinction. Focused on data analysis, programming, AI, and business technology solutions.",
+    description: "Graduated with Excellent. Focused on data analysis, programming, AI, and business technology solutions.",
   },
 ];
 
