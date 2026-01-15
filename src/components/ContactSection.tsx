@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Facebook } from "lucide-react";
 
 const contactInfo = [
   {
@@ -24,6 +24,12 @@ const contactInfo = [
     label: "LinkedIn",
     value: "Mirna Nabil",
     href: "https://www.linkedin.com/in/mirna-nabil-27781030b",
+  },
+  {
+    icon: Facebook,
+    label: "Facebook",
+    value: "Mirna Nabil",
+    href: "https://www.facebook.com/share/1DcdGgcV6b/",
   },
 ];
 
