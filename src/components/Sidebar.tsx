@@ -1,16 +1,17 @@
-import { Home, User, GraduationCap, Briefcase, Mail } from "lucide-react";
+import { Home, User, GraduationCap, Briefcase, FolderKanban, Mail } from "lucide-react";
 
 const navItems = [
   { icon: Home, label: "Home", href: "#home" },
   { icon: User, label: "About", href: "#about" },
   { icon: GraduationCap, label: "Journey", href: "#journey" },
   { icon: Briefcase, label: "Skills", href: "#skills" },
+  { icon: FolderKanban, label: "Projects", href: "#projects" },
   { icon: Mail, label: "Contact", href: "#contact" },
 ];
 
 const Sidebar = () => {
   return (
-    <nav className="fixed left-0 top-0 h-screen w-20 bg-sidebar flex flex-col items-center justify-center gap-2 z-50 nav-glow border-r border-border">
+    <nav className="fixed left-0 top-0 h-screen w-20 bg-sidebar hidden sm:flex flex-col items-center justify-center gap-2 z-50 nav-glow border-r border-border">
       {navItems.map((item) => (
         <a
           key={item.label}

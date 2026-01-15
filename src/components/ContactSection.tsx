@@ -4,8 +4,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "mernabil1012@gmail.com",
-    href: "mailto:mernabil1012@gmail.com",
+    value: "mernanabil1012@gmail.com",
+    href: "mailto:mernanabil1012@gmail.com",
   },
   {
     icon: Phone,
@@ -23,7 +23,7 @@ const contactInfo = [
     icon: Linkedin,
     label: "LinkedIn",
     value: "Mirna Nabil",
-    href: "https://www.linkedin.com/in/merna-nabil-27781030b",
+    href: "https://www.linkedin.com/in/mirna-nabil-27781030b",
   },
 ];
 
