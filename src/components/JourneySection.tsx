@@ -2,16 +2,16 @@ import { GraduationCap, Award } from "lucide-react";
 
 const education = [
   {
-    period: "University",
-    title: "Bachelor's in Information Systems",
+    period: "2021 - 2025",
+    title: "Bachelor's in Computers and Artificial Intelligence",
     institution: "Helwan University",
-    description: "Focused on data analysis, programming, and business technology solutions.",
+    description: "Graduated with Distinction (امتياز). Focused on data analysis, programming, AI, and business technology solutions.",
   },
 ];
 
 const courses = [
   {
-    period: "2024",
+    period: "2025 - 2026",
     title: "Data Analysis Diploma",
     institution: "Professional Training",
     description: "Comprehensive diploma covering data analysis, visualization, Power BI, Tableau, and business analytics.",

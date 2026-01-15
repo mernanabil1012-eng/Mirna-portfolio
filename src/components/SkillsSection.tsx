@@ -30,6 +30,11 @@ const technicalSkills = [
     skills: ["Data Analysis", "Pandas", "Data Visualization"],
   },
   {
+    name: "Machine Learning",
+    icon: "https://cdn-icons-png.flaticon.com/512/8637/8637099.png",
+    skills: ["Supervised Learning", "Model Training", "Scikit-learn"],
+  },
+  {
     name: "MS Office",
     icon: "https://i.ibb.co/6JrZVgf6/Microsoft-Office-2016-Logo-wine.png",
     skills: ["Word", "PowerPoint", "Outlook"],
