@@ -1,5 +1,6 @@
-import { ExternalLink, Github, FolderKanban, BarChart3 } from "lucide-react";
+import { ExternalLink, Github, FolderKanban, BarChart3, PieChart } from "lucide-react";
 import hrAnalyticsDashboard from "@/assets/hr-analytics-dashboard.png";
+import pharmacyInventoryDashboard from "@/assets/pharmacy-inventory-dashboard.png";
 
 interface Project {
   title: string;
@@ -8,6 +9,7 @@ interface Project {
   technologies: string[];
   liveUrl?: string;
   githubUrl?: string;
+  icon: "tableau" | "powerbi";
 }
 
 const projects: Project[] = [
@@ -17,6 +19,15 @@ const projects: Project[] = [
     image: hrAnalyticsDashboard,
     technologies: ["Tableau Desktop", "Data Visualization", "HR Analytics", "Data Cleaning"],
     githubUrl: "https://github.com/mernanabil1012-eng/Tableau-HR-Dashboard.git",
+    icon: "tableau",
+  },
+  {
+    title: "Power BI Pharmacy Inventory Dashboard",
+    description: "An interactive Power BI dashboard designed to monitor inventory performance, track stock availability, and analyze supplier-related risks. The project transforms raw inventory data into clear KPIs and actionable insights to support operational and strategic decision-making. Key Features include Inventory Overview with KPI cards, Stock Monitoring for low-stock items, Supplier Analysis, Risk Insights, and Interactive Filters. Improves inventory visibility, reduces stock-out risk, and supports data-driven supplier decisions.",
+    image: pharmacyInventoryDashboard,
+    technologies: ["Power BI", "DAX", "Data Modeling", "KPI Design", "Inventory Analytics"],
+    githubUrl: "https://github.com/mernanabil1012-eng/Pharmacy-Inventory-Dashboard-PowerBI.git",
+    icon: "powerbi",
   },
 ];
 
@@ -40,7 +51,11 @@ const ProjectsSection = () => {
               >
                 <div className="p-6 pb-4 flex flex-col items-center text-center">
                   <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-4">
-                    <BarChart3 className="w-8 h-8 text-primary" />
+                    {project.icon === "tableau" ? (
+                      <BarChart3 className="w-8 h-8 text-primary" />
+                    ) : (
+                      <PieChart className="w-8 h-8 text-primary" />
+                    )}
                   </div>
                   <h3 className="text-xl font-semibold">{project.title}</h3>
                 </div>
