@@ -1,4 +1,5 @@
 import { ExternalLink, Github, FolderKanban } from "lucide-react";
+import hrAnalyticsDashboard from "@/assets/hr-analytics-dashboard.png";
 
 interface Project {
   title: string;
@@ -14,6 +15,13 @@ const projects: Project[] = [
     title: "HR Dashboard",
     description: "Interactive dashboard for analyzing employee data, turnover rates, and workforce demographics.",
     technologies: ["Power BI", "DAX", "Excel"],
+  },
+  {
+    title: "Tableau Project HR Analytics Dashboard",
+    description: "This interactive Tableau dashboard provides a comprehensive view of HR data to help organizations understand employee trends and make data-driven decisions. The dashboard focuses on key areas such as Employee Attrition (identify which age groups, genders, and job roles have the highest turnover), Job Satisfaction & Training (analyze employee satisfaction levels and the impact of training participation on promotions), and Actionable Insights (highlight patterns and trends that HR can act upon to improve retention and engagement).",
+    image: hrAnalyticsDashboard,
+    technologies: ["Tableau Desktop", "Data Visualization", "HR Analytics", "Data Cleaning"],
+    githubUrl: "https://github.com/mernanabil1012-eng/Tableau-HR-Dashboard.git",
   },
 ];
 
@@ -76,10 +84,10 @@ const ProjectsSection = () => {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-sm text-primary hover:underline"
+                        className="flex items-center gap-1 text-sm bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
                       >
-                        <Github className="w-4 h-4" />
-                        Code
+                        <ExternalLink className="w-4 h-4" />
+                        View Project
                       </a>
                     )}
                   </div>
