@@ -38,6 +38,9 @@ const ProjectsSection = () => {
                 key={index}
                 className="bg-secondary rounded-xl overflow-hidden card-hover group"
               >
+                <div className="p-6 pb-4">
+                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                </div>
                 {project.image && (
                   <div className="aspect-video overflow-hidden">
                     <img
@@ -47,8 +50,7 @@ const ProjectsSection = () => {
                     />
                   </div>
                 )}
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <div className="p-6 pt-4">
                   <p className="text-muted-foreground text-sm mb-4">
                     {project.description}
                   </p>
