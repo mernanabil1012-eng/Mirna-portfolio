@@ -12,11 +12,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "HR Dashboard",
-    description: "Interactive dashboard for analyzing employee data, turnover rates, and workforce demographics.",
-    technologies: ["Power BI", "DAX", "Excel"],
-  },
-  {
     title: "Tableau Project HR Analytics Dashboard",
     description: "This interactive Tableau dashboard provides a comprehensive view of HR data to help organizations understand employee trends and make data-driven decisions. The dashboard focuses on key areas such as Employee Attrition (identify which age groups, genders, and job roles have the highest turnover), Job Satisfaction & Training (analyze employee satisfaction levels and the impact of training participation on promotions), and Actionable Insights (highlight patterns and trends that HR can act upon to improve retention and engagement).",
     image: hrAnalyticsDashboard,
