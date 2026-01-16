@@ -10,15 +10,11 @@ interface Project {
 }
 
 const projects: Project[] = [
-  // Add your projects here
-  // Example:
-  // {
-  //   title: "Sales Dashboard",
-  //   description: "Interactive Power BI dashboard for sales analysis and KPI tracking.",
-  //   image: "/project-image.png",
-  //   technologies: ["Power BI", "DAX", "SQL"],
-  //   liveUrl: "https://example.com",
-  // },
+  {
+    title: "HR Dashboard",
+    description: "Interactive dashboard for analyzing employee data, turnover rates, and workforce demographics.",
+    technologies: ["Power BI", "DAX", "Excel"],
+  },
 ];
 
 const ProjectsSection = () => {
