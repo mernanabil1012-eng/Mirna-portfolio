@@ -1,4 +1,4 @@
-import { ExternalLink, Github, FolderKanban } from "lucide-react";
+import { ExternalLink, Github, FolderKanban, BarChart3 } from "lucide-react";
 import hrAnalyticsDashboard from "@/assets/hr-analytics-dashboard.png";
 
 interface Project {
@@ -38,7 +38,10 @@ const ProjectsSection = () => {
                 key={index}
                 className="bg-secondary rounded-xl overflow-hidden card-hover group"
               >
-                <div className="p-6 pb-4">
+                <div className="p-6 pb-4 flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-4">
+                    <BarChart3 className="w-8 h-8 text-primary" />
+                  </div>
                   <h3 className="text-xl font-semibold">{project.title}</h3>
                 </div>
                 {project.image && (
