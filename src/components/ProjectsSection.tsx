@@ -2,6 +2,7 @@ import { ExternalLink, Github, FolderKanban, BarChart3, PieChart, Brain } from "
 import hrAnalyticsDashboard from "@/assets/hr-analytics-dashboard.png";
 import pharmacyInventoryDashboard from "@/assets/pharmacy-inventory-dashboard.png";
 import rfmAnalysisImage from "@/assets/rfm-analysis.png";
+import sallaCallCenterImage from "@/assets/salla-call-center.png";
 interface Project {
   title: string;
   subtitle?: string;
@@ -29,6 +30,14 @@ const projects: Project[] = [
     image: pharmacyInventoryDashboard,
     technologies: ["Power BI", "DAX", "Data Modeling", "KPI Design", "Inventory Analytics"],
     githubUrl: "https://github.com/mernanabil1012-eng/Pharmacy-Inventory-Dashboard-PowerBI.git",
+    icon: "powerbi",
+  },
+  {
+    title: "Power BI Salla Call Center Dashboard",
+    description: "An interactive Power BI dashboard designed to analyze and monitor call center performance and support data-driven decision making. The dashboard provides a clear overview of call volumes, service quality, and agent performance, helping management identify trends, strengths, and areas for improvement. Key Features: Monitors critical KPIs such as Total Calls, Handling Rate, Abandon Rate, and Average Speed of Answer (ASA). Analyzes agent performance, tracks call trends over time, compares handled vs. abandoned calls, and includes fully dynamic slicers for Agent, Project, and Month. Helps improve service level, identify top-performing agents, reduce call abandonment, and make faster data-driven operational decisions.",
+    image: sallaCallCenterImage,
+    technologies: ["Power BI", "DAX", "Data Modeling", "Interactive Visualizations", "KPI Design", "Dashboard Storytelling"],
+    githubUrl: "https://github.com/mernanabil1012-eng/PowerBI-Call-Center-Dashboard.git",
     icon: "powerbi",
   },
   {
