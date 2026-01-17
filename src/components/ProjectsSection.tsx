@@ -1,7 +1,7 @@
 import { ExternalLink, Github, FolderKanban, BarChart3, PieChart, Brain } from "lucide-react";
 import hrAnalyticsDashboard from "@/assets/hr-analytics-dashboard.png";
 import pharmacyInventoryDashboard from "@/assets/pharmacy-inventory-dashboard.png";
-
+import rfmAnalysisImage from "@/assets/rfm-analysis.png";
 interface Project {
   title: string;
   subtitle?: string;
@@ -35,10 +35,11 @@ const projects: Project[] = [
     title: "🤖 RFM-Based Customer Analytics & Machine Learning Project",
     subtitle: "Graduation Project",
     description: "An advanced analytics web application focused on customer behavior modeling and prediction using RFM analysis and machine learning techniques. I led the machine learning and data analysis pipeline, transforming transactional data into predictive insights that support customer retention and targeted marketing strategies. The project leverages Python-based ML models for customer segmentation, churn prediction, and repurchase probability, integrated with a React frontend and Node.js backend to deliver interactive, business-ready dashboards across Customer, Revenue, Product, and Predictive views.",
+    image: rfmAnalysisImage,
     technologies: ["Machine Learning", "RFM Analysis", "Churn Prediction", "Python", "Scikit-learn", "Data Analytics"],
     githubUrl: "https://github.com/Ziadali20/customer-segmentation.git",
     icon: "rfm",
-    badge: "امتياز",
+    badge: "Grade: Excellent",
   },
 ];
 
