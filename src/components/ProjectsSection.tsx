@@ -1,8 +1,9 @@
-import { ExternalLink, Github, FolderKanban, BarChart3, PieChart, Brain } from "lucide-react";
+import { ExternalLink, Github, FolderKanban, BarChart3, PieChart, Brain, FileSpreadsheet } from "lucide-react";
 import hrAnalyticsDashboard from "@/assets/hr-analytics-dashboard.png";
 import pharmacyInventoryDashboard from "@/assets/pharmacy-inventory-dashboard.png";
 import rfmAnalysisImage from "@/assets/rfm-analysis.png";
 import sallaCallCenterImage from "@/assets/salla-call-center.png";
+import misuoDashboard from "@/assets/misuo-dashboard.png";
 interface Project {
   title: string;
   subtitle?: string;
@@ -11,11 +12,19 @@ interface Project {
   technologies: string[];
   liveUrl?: string;
   githubUrl?: string;
-  icon: "tableau" | "powerbi" | "rfm";
+  icon: "tableau" | "powerbi" | "rfm" | "excel";
   badge?: string;
 }
 
 const projects: Project[] = [
+  {
+    title: "📊 MISUO Sales Dashboard – Excel Project",
+    description: "An interactive Sales Dashboard using Microsoft Excel to analyze and visualize sales performance for MISUO. The main objective was to transform raw sales data into clear, actionable insights that support data-driven decision-making. The dashboard highlights: Total Sales, Total Orders, and Average Selling Price; Best Seller Products to identify top-performing items; Best-Selling Colors to understand customer preferences; On-time Delivery Rate vs delayed deliveries; Delivery Status Breakdown (Delivered vs Canceled); Orders by Area to analyze regional demand; Sales by Platform to evaluate platform performance. Built using Excel Pivot Tables and Pivot Charts with Interactive Slicers, Clear KPI cards, and consistent design for better readability and storytelling.",
+    image: misuoDashboard,
+    technologies: ["Microsoft Excel", "Pivot Tables", "Pivot Charts", "Data Analysis", "KPI Design", "Dashboard Storytelling"],
+    githubUrl: "https://github.com/mernanabil1012-eng/MISUO-Sales-Dashboard-Excel.git",
+    icon: "excel",
+  },
   {
     title: "Tableau Project HR Analytics Dashboard",
     description: "This interactive Tableau dashboard provides a comprehensive view of HR data to help organizations understand employee trends and make data-driven decisions. The dashboard focuses on key areas such as Employee Attrition (identify which age groups, genders, and job roles have the highest turnover), Job Satisfaction & Training (analyze employee satisfaction levels and the impact of training participation on promotions), and Actionable Insights (highlight patterns and trends that HR can act upon to improve retention and engagement).",
@@ -72,10 +81,12 @@ const ProjectsSection = () => {
               >
                 <div className="p-6 pb-4 flex flex-col items-center text-center">
                   <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-4">
-                    {project.icon === "tableau" ? (
+                  {project.icon === "tableau" ? (
                       <BarChart3 className="w-8 h-8 text-primary" />
                     ) : project.icon === "powerbi" ? (
                       <PieChart className="w-8 h-8 text-primary" />
+                    ) : project.icon === "excel" ? (
+                      <FileSpreadsheet className="w-8 h-8 text-primary" />
                     ) : (
                       <Brain className="w-8 h-8 text-primary" />
                     )}
