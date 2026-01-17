@@ -66,6 +66,11 @@ const technicalSkills = [
   },
 ];
 
+const languages = [
+  { name: "Arabic", level: "Native" },
+  { name: "English", level: "Very Good" },
+];
+
 const softSkills = [
   "Problem Solving",
   "Logical Thinking",
@@ -108,6 +113,22 @@ const SkillsSection = () => {
                   <li key={s}>• {s}</li>
                 ))}
               </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Languages */}
+        <h3 className="text-2xl font-bold text-center mb-8">
+          <span className="text-gradient">Languages</span>
+        </h3>
+        <div className="flex flex-wrap justify-center gap-6 mb-16">
+          {languages.map((lang) => (
+            <div
+              key={lang.name}
+              className="bg-secondary px-8 py-4 rounded-xl text-center border border-primary/30 hover:border-primary transition-all duration-300"
+            >
+              <h4 className="font-semibold text-lg">{lang.name}</h4>
+              <p className="text-sm text-muted-foreground">{lang.level}</p>
             </div>
           ))}
         </div>
