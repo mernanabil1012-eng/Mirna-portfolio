@@ -35,6 +35,16 @@ const technicalSkills = [
     skills: ["Supervised Learning", "Model Training", "Scikit-learn"],
   },
   {
+    name: "Statistical & Mathematical",
+    icon: "https://cdn-icons-png.flaticon.com/512/3214/3214679.png",
+    skills: ["Probability", "Statistics", "Linear Algebra", "Calculus"],
+  },
+  {
+    name: "AI Agent",
+    icon: "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
+    skills: ["Prompt Engineering", "AI Tools", "Automation"],
+  },
+  {
     name: "MS Office",
     icon: "https://i.ibb.co/6JrZVgf6/Microsoft-Office-2016-Logo-wine.png",
     skills: ["Word", "PowerPoint", "Outlook"],
@@ -43,6 +53,16 @@ const technicalSkills = [
     name: "Data Analysis",
     icon: "https://cdn-icons-png.flaticon.com/512/2103/2103633.png",
     skills: ["Data Cleaning", "Reporting", "Insights", "KPIs"],
+  },
+  {
+    name: "C & C++",
+    icon: "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
+    skills: ["Programming", "Problem Solving", "OOP"],
+  },
+  {
+    name: "HTML & CSS",
+    icon: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+    skills: ["Web Development", "Styling", "Responsive Design"],
   },
 ];
 
