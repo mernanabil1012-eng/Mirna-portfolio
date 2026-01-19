@@ -39,7 +39,7 @@ const HeroSection = () => {
 
   const cvPath = "/Mirna_Nabil_CV.pdf";
   // اسم الملف اللي هينزل عند المستخدم (ممكن يختلف عن اسم المسار)
-  const cvDownloadName = "Mirna_Nabil_CV-2.pdf";
+  const cvDownloadName = "Mirna_Nabil_CV.pdf";
 
   const handleDownloadCv = async () => {
     // Force-download حتى لو المتصفح بيفتح PDF داخل التاب
