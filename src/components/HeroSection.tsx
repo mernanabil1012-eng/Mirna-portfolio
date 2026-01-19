@@ -37,26 +37,6 @@ const roles = ["Power BI Engineer", "Dashboard Designer", "Data Analyst"];
 const HeroSection = () => {
   const { text } = useTypewriter({ words: roles });
 
-  const cvPath = "/Mirna_Nabil_CV.pdf";
-  // اسم الملف اللي هينزل عند المستخدم (ممكن يختلف عن اسم المسار)
-  const cvDownloadName = "Mirna_Nabil_CV.pdf";
-
-  const handleDownloadCv = async () => {
-    // Force-download حتى لو المتصفح بيفتح PDF داخل التاب
-    const res = await fetch(cvPath);
-    const blob = await res.blob();
-    const url = window.URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = cvDownloadName;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-
-    window.URL.revokeObjectURL(url);
-  };
-
   return (
     <section
       id="home"
@@ -99,15 +79,15 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 pt-4">
-            <button
-              type="button"
-              onClick={handleDownloadCv}
-              className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 flex items-center gap-2"
+            <a
+              href="/Mirna_Nabil_CV.pdf"
+              download="Mirna_Nabil_CV.pdf"
+              className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 flex items-center gap-2 inline-flex"
               aria-label="Download CV"
             >
               <Download className="w-4 h-4" />
               Download CV
-            </button>
+            </a>
             <a
               href="#skills"
               className="px-8 py-3 border border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center gap-2"
