@@ -1,6 +1,8 @@
 import { Download, FolderOpen } from "lucide-react";
 import profileImage from "@/assets/mirna-profile.png";
 import { useTypewriter } from "@/hooks/useTypewriter";
+// استيراد الـ CV مباشرة
+import cvFile from "/public/Mirna_Nabil_CV.pdf";
 
 const socialLinks = [
   {
@@ -80,8 +82,10 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 pt-4">
             <a
-              href="/Mirna_Nabil_CV.pdf"
+              href={cvFile}
               download="Mirna_Nabil_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 flex items-center gap-2 inline-flex"
               aria-label="Download CV"
             >
